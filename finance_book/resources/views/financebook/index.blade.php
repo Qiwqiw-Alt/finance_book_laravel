@@ -3,91 +3,88 @@
 <head>
     <title>Daftar Catatan Keuangan</title>
     <style>
-    body { 
-        font-family: Arial, sans-serif; 
-        margin: 20px; 
-    }
-    table { 
-        border-collapse: collapse; 
-        width: 100%; 
-        margin-top: 20px; 
-    }
-    th, td { 
-        border: 1px solid #ddd; 
-        padding: 12px; 
-        text-align: left; 
-    }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        }
+        
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 20px; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        
+        th { 
+            background-color: #0d47a1; 
+            color: white; 
+        }
     
-    th { 
-        background-color: #0d47a1; 
-        color: white; 
-    }
-
-    .btn { 
-        padding: 8px 12px; 
-        margin: 2px; 
-        text-decoration: none; 
-        border-radius: 4px; 
-        border: none;
-        cursor: pointer;
-    }
+        .btn { 
+            padding: 8px 12px; 
+            margin: 2px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary { 
+            background-color: #007bff;
+            color: white; 
+        }
+        
+        .btn-success { 
+            background-color: #0dcaf0; 
+            color: #000; 
+        }
+       
+        .btn-warning { 
+            background-color: #87CEEB; 
+            color: #000; 
+        }
     
-    .btn-primary { 
-        background-color: #007bff;
-        color: white; 
-    }
+        .btn-danger { 
+            background-color: #000080; 
+            color: white; 
+        }
+        
+        .alert { 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 4px; 
+        }
     
-    .btn-success { 
-        background-color: #0dcaf0; 
-        color: #000; 
-    }
-   
-    .btn-warning { 
-        background-color: #87CEEB; 
-        color: #000; 
-    }
-    
-
-    .btn-danger { 
-        background-color: #000080; 
-        color: white; 
-    }
-    
-    .alert { 
-        padding: 15px; 
-        margin: 10px 0; 
-        border-radius: 4px; 
-    }
-    
-
-    .alert-success { 
-        background-color: #cce5ff;
-        color: #004085; 
-        border: 1px solid #b8daff; 
-    }
- 
-    
-    .search-form { 
-        margin: 15px 0; 
-        display: flex; 
-    }
-    .search-form input[type="text"] { 
-        flex: 1; 
-        padding: 10px; 
-        border: 1px solid #ddd; 
-        border-radius: 4px 0 0 4px; 
-    }
-    
-  
-    .search-form button { 
-        padding: 10px 15px; 
-        border: none; 
-        background-color: #007bff; 
-        color: white; 
-        cursor: pointer; 
-        border-radius: 0 4px 4px 0; 
-    }
-</style>
+        .alert-success { 
+            background-color: #cce5ff;
+            color: #004085; 
+            border: 1px solid #b8daff; 
+        }
+     
+        .search-form { 
+            margin: 15px 0; 
+            display: flex; 
+        }
+        .search-form input[type="text"] { 
+            flex: 1; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px 0 0 4px; 
+        }
+        
+        .search-form button { 
+            padding: 10px 15px; 
+            border: none; 
+            background-color: #007bff; 
+            color: white; 
+            cursor: pointer; 
+            border-radius: 0 4px 4px 0; 
+        }
+    </style>
 </head>
 <body>
    <h1>📚 Daftar Catatan Keuangan</h1>
