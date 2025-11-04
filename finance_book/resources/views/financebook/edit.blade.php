@@ -2,50 +2,50 @@
 <html>
 <head>
     <title>Edit Catatan: {{ $note->id }}</title>
-   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; max-width: 600px; }
-    .form-group { margin-bottom: 15px; }
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; max-width: 600px; }
+        .form-group { margin-bottom: 15px; }
+        
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold; 
+            color: #004085; 
+        }
+        
     
-    label { 
-        display: block; 
-        margin-bottom: 5px; 
-        font-weight: bold; 
-        color: #004085; 
-    }
+        input[type="text"], input[type="date"], input[type="number"], select, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #b8daff; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+        
+        .btn { padding: 12px 20px; margin: 5px; text-decoration: none; border: none; border-radius: 4px; cursor: pointer; }
+        
+        .btn-primary { background-color: #007bff; color: white; }
+        
     
-
-    input[type="text"], input[type="date"], input[type="number"], select, textarea { 
-        width: 100%; 
-        padding: 10px; 
-        border: 1px solid #b8daff; 
-        border-radius: 4px; 
-        box-sizing: border-box; 
-    }
+        .btn-secondary { 
+            background-color: #87CEEB;
+            color: #000; 
+        }
+        
+        .btn-success { 
+            background-color: #0dcaf0; 
+            color: #000; 
+        }
+        
     
-    .btn { padding: 12px 20px; margin: 5px; text-decoration: none; border: none; border-radius: 4px; cursor: pointer; }
+        .error { color: #dc3545; font-size: 14px; margin-top: 5px; }
+        .alert { padding: 15px; margin: 10px 0; border-radius: 4px; }
+        
     
-    .btn-primary { background-color: #007bff; color: white; }
-    
-
-    .btn-secondary { 
-        background-color: #87CEEB;
-        color: #000; 
-    }
-    
-    .btn-success { 
-        background-color: #0dcaf0; 
-        color: #000; 
-    }
-    
-
-    .error { color: #dc3545; font-size: 14px; margin-top: 5px; }
-    .alert { padding: 15px; margin: 10px 0; border-radius: 4px; }
-    
-
-    .alert-danger { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-    
-    .info-box { background-color: #e3f2fd; padding: 15px; border-radius: 4px; border-left: 4px solid #2196f3; }
-</style>
+        .alert-danger { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        
+        .info-box { background-color: #e3f2fd; padding: 15px; border-radius: 4px; border-left: 4px solid #2196f3; }
+    </style>
 </head>
 <body>
     <h1>✏️ Edit Catatan Keuangan</h1>
