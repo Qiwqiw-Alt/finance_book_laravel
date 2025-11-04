@@ -150,11 +150,5 @@
         </form>
     </div>
     
-    <div style="margin-top: 30px; padding: 15px; background-color: #f8f9fa; border-radius: 4px;">
-        <h3>ℹ️ Informasi Tambahan</h3>
-        <p><strong>URL:</strong> {{ request()->url() }}</p>
-        <p><strong>Route Name:</strong> {{ Route::currentRouteName() }}</p>
-        <p><strong>Method:</strong> {{ request()->method() }}</p>
-    </div>
 </body>
 </html>
