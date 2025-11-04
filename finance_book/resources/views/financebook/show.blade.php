@@ -3,80 +3,79 @@
 <head>
     <title>Detail Catatan: {{ $note->id }}</title>
     <style>
-    body { font-family: Arial, sans-serif; margin: 20px; max-width: 800px; }
+        body { font-family: Arial, sans-serif; margin: 20px; max-width: 800px; }
+        
+        .card { 
+            border: 1px solid #b8daff; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin: 20px 0; 
+        }
     
-    .card { 
-        border: 1px solid #b8daff; 
-        border-radius: 8px; 
-        padding: 20px; 
-        margin: 20px 0; 
-    }
-
-    .card-header { 
-        border-bottom: 1px solid #b8daff; 
-        padding-bottom: 10px; 
-        margin-bottom: 15px; 
-    }
-    .card-title { 
-        font-size: 24px; 
-        margin: 0; 
-        color: #0d47a1;
-    }
+        .card-header { 
+            border-bottom: 1px solid #b8daff; 
+            padding-bottom: 10px; 
+            margin-bottom: 15px; 
+        }
+        
+        .card-title { 
+            font-size: 24px; 
+            margin: 0; 
+            color: #0d47a1;
+        }
+        
+        .info-row { display: flex; margin: 10px 0; }
+        .info-label { 
+            font-weight: bold; 
+            width: 150px; 
+            color: #004085; 
+        }
+        .info-value { flex: 1; }
+        
+        .btn { 
+            padding: 10px 15px; 
+            margin: 5px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            display: inline-block; 
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-warning { 
+            background-color: #87CEEB; 
+            color: #000; 
+        }
+      
+        .btn-secondary { 
+            background-color: #007bff; 
+            color: white; 
+        }
     
-    .info-row { display: flex; margin: 10px 0; }
-    .info-label { 
-        font-weight: bold; 
-        width: 150px; 
-        color: #004085; 
-    }
-    .info-value { flex: 1; }
-    
-
-    .btn { 
-        padding: 10px 15px; 
-        margin: 5px; 
-        text-decoration: none; 
-        border-radius: 4px; 
-        display: inline-block; 
-        border: none;
-        cursor: pointer;
-    }
-    
-    .btn-warning { 
-        background-color: #87CEEB; 
-        color: #000; 
-    }
-  
-    .btn-secondary { 
-        background-color: #007bff; 
-        color: white; 
-    }
-
-    .btn-danger { 
-        background-color: #000080; 
-        color: white; 
-        font-family: Arial, sans-serif; 
-        font-size: 14px;
-    }
-    
-    .badge { 
-        padding: 5px 10px; 
-        border-radius: 12px; 
-        font-size: 12px; 
-        font-weight: bold; 
-    }
-    
-  
-    .badge-income { 
-        background-color: #87CEEB;
-        color: #000; 
-    }
-    
-    .badge-expense { 
-        background-color: #0d47a1; 
-        color: white; 
-    }
-</style>
+        .btn-danger { 
+            background-color: #000080; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            font-size: 14px;
+        }
+        
+        .badge { 
+            padding: 5px 10px; 
+            border-radius: 12px; 
+            font-size: 12px; 
+            font-weight: bold; 
+        }
+        
+        .badge-income { 
+            background-color: #87CEEB;
+            color: #000; 
+        }
+        
+        .badge-expense { 
+            background-color: #0d47a1; 
+            color: white; 
+        }
+    </style>
 </head>
 <body>
     <div class="card">
